@@ -8,6 +8,19 @@
     "dev": "nodemon server.js",
     "init-db": "node config/initDB.js"
   },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
   "keywords": ["task-management", "rest-api", "jwt", "mysql"],
   "author": "",
   "license": "ISC"

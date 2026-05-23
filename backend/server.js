@@ -47,7 +47,7 @@ if (isProd) {
   const frontendDist = path.join(__dirname, '..', 'frontend', 'dist');
   app.use(express.static(frontendDist));
   // Catch-all: return index.html for React Router client-side routes
-  app.get('*', (req, res) => {
+  app.get('/(.*)', (req, res) => {
     res.sendFile(path.join(frontendDist, 'index.html'));
   });
 }
